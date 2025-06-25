@@ -65,7 +65,7 @@ async def thales_udf(inputdata: str, mode: str, datatype: str)-> Any:
         print(f"'{"CRDPIP"}' not found in properties file, checking environment variables...")
         crdpip = os.environ.get("CRDPIP")
     if crdpip is not None:
-        print(f"CRDPIP resolved to: {crdpip}")
+        print(f"CRDPIP resolved to:")
     else:
         print(f"Warning: '{"CRDPIP"}' not found in properties file or environment variables. Using a default or raising an error.")
 
@@ -75,7 +75,7 @@ async def thales_udf(inputdata: str, mode: str, datatype: str)-> Any:
         print(f"'{"user_name"}' not found in properties file, checking environment variables...")
         user_name = os.environ.get("user_name")
     if user_name is not None:
-        print(f"user_name resolved to: {user_name}")
+        print(f"user_name resolved to: ")
     else:
         print(f"Warning: '{"user_name"}' not found in properties file or environment variables. Using a default or raising an error.")
 
